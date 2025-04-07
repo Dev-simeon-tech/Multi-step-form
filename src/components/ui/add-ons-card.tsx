@@ -35,8 +35,8 @@ const AddOnsCard = ({ addOn }: AddOnsCardType) => {
   return (
     <button
       onClick={onPickHandler}
-      className={`flex items-center justify-between gap-2 border-2 p-4 rounded-lg hover:border-Marine-blue ${
-        isSelected ? "border-Marine-blue" : "border-Light-gray"
+      className={`flex items-center justify-between gap-2 border-1 p-4 rounded-lg hover:border-Purplish-blue ${
+        isSelected ? "border-Purplish-blue bg-Magnolia" : "border-Light-gray"
       }`}
     >
       <div className='flex items-center gap-4 lg:gap-6'>

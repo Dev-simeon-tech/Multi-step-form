@@ -53,7 +53,8 @@ const SelectPlan = () => {
           <PlanCard key={index} imageSrc={imagesSrc[index]} plan={plan} />
         ))}
       </div>
-      <div className='flex gap-4 mt-10 justify-center'>
+
+      <div className='flex gap-4 mt-10 justify-center bg-Magnolia p-4'>
         <span
           className={`${
             priceType === "monthly" ? "text-Marine-blue" : "text-Cool-gray"

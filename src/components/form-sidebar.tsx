@@ -10,7 +10,7 @@ const FormSidebar = () => {
 
   return (
     <div className='bg-center bg-cover bg-no-repeat sidebar-bg h-[10rem] lg:min-w-[15rem] lg:h-full lg:rounded-xl text-White'>
-      <ul className='flex gap-4 pt-8 justify-center lg:justify-items-start px-6 lg:flex-col'>
+      <ul className='flex gap-4 pt-8 justify-center lg:justify-items-start lg:gap-6 px-6 lg:flex-col'>
         {stepList.map((step, index) => (
           <li
             key={index}
@@ -20,8 +20,10 @@ const FormSidebar = () => {
           >
             <ListMarker stepNumber={index + 1} />
             <div className='hidden lg:block'>
-              <h3 className=' text-Light-blue'>STEP {index + 1}</h3>
-              <p className='font-Ubuntu-bold tracking-widest'>
+              <h3 className=' text-Pastel-blue text-[0.8rem] font-extralight'>
+                STEP {index + 1}
+              </h3>
+              <p className='font-Ubuntu-medium text-sm tracking-widest'>
                 {step.toUpperCase()}
               </p>
             </div>

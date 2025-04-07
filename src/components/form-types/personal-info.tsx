@@ -35,6 +35,7 @@ const PersonalInfo = () => {
       </article>
 
       <form
+        noValidate
         id='personal-info'
         className='personal-info-form space-y-3 lg:space-y-6'
         onSubmit={handleSubmit(onSubmit)}

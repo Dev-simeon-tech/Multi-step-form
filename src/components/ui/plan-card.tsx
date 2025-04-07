@@ -25,9 +25,9 @@ const PlanCard = ({ plan, imageSrc }: PlanCardType) => {
   return (
     <button
       onClick={() => onSelectHandler(plan)}
-      className={`flex p-6 rounded-xl border-2 gap-4 lg:flex-col lg:gap-8 lg:max-w-[10rem] lg:w-full hover:border-Marine-blue ${
+      className={`flex p-6 rounded-xl border-1 gap-4 lg:flex-col lg:gap-8 lg:flex-1  hover:border-Purplish-blue ${
         formPlan.title === plan.title
-          ? "border-Marine-blue"
+          ? "border-Purplish-blue bg-Magnolia"
           : "border-Light-gray"
       } `}
     >

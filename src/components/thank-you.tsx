@@ -7,7 +7,7 @@ const ThankYou = () => {
       <h2 className='text-3xl text-Marine-blue font-Ubuntu-bold pt-6 pb-2'>
         Thank you!
       </h2>
-      <p className='text-xl text-Cool-gray'>
+      <p className='text-xl text-Cool-gray lg:max-w-[40ch]'>
         Thanks for confirming your subscription! We hope you have fun using our
         platform. If you ever need support, please feel free to email us at
         support@loremgaming.com.
