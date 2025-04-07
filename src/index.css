@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Ubuntu-regular";
+  src: url("../public/fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-medium";
+  src: url("../public/fonts/Ubuntu-Medium.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-bold";
+  src: url("../public/fonts/Ubuntu-Bold.ttf");
+}
+
+@theme {
+  --color-Marine-blue: hsl(213, 96%, 18%);
+  --color-Purplish-blue: hsl(243, 100%, 62%);
+  --color-Pastel-blue: hsl(228, 100%, 84%);
+  --color-Light-blue: hsl(206, 94%, 87%);
+  --color-Strawberry-red: hsl(354, 84%, 57%);
+
+  --color-Cool-gray: hsl(231, 11%, 63%);
+  --color-Light-gray: hsl(229, 24%, 87%);
+  --color-Magnolia: hsl(217, 100%, 97%);
+  --color-Alabaster: hsl(231, 100%, 99%);
+  --color-White: hsl(0, 0%, 100%);
+
+  --font-Ubuntu-regular: "Ubuntu-regular", sans-serif;
+  --font-Ubuntu-medium: "Ubuntu-medium", sans-serif;
+  --font-Ubuntu-bold: "Ubuntu-bold", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-Ubuntu-regular);
+    background-color: var(--color-Magnolia);
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  button {
+    @apply lg:cursor-pointer;
+  }
+}
+@layer utilities {
+  .sidebar-bg {
+    background-image: url("./assets/images/bg-sidebar-mobile.svg");
+  }
+}
+@layer components {
+  .form-nav .marker {
+    color: var(--color-White);
+  }
+  .form-nav.active .marker {
+    background-color: var(--color-Light-blue);
+    color: var(--color-Marine-blue);
+  }
+  .form-title {
+    @apply text-Marine-blue text-3xl font-Ubuntu-bold lg:text-4xl;
+  }
+  .form-p {
+    @apply text-Cool-gray text-xl py-4;
+  }
+
+  .personal-info-form input {
+    @apply border-2 rounded-lg  w-full p-2 text-lg font-Ubuntu-medium;
+  }
+  /* .personal-info-form input:focus {
+    outline: none;
+  } */
+  .personal-info-form label {
+    @apply text-Marine-blue;
+  }
+  .check-box.checked {
+    background-color: var(--color-Purplish-blue);
+    background-image: url("./assets/images/icon-checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: 50rem) {
+  @layer utilities {
+    .sidebar-bg {
+      background-image: url("./assets/images/bg-sidebar-desktop.svg");
+    }
+  }
+}
