@@ -47,13 +47,15 @@ const AddOnsCard = ({ addOn }: AddOnsCardType) => {
         ></div>
 
         <article className='text-left'>
-          <h3>{title}</h3>
+          <h3 className='text-Marine-blue font-Ubuntu-medium lg:text-lg'>
+            {title}
+          </h3>
           <p className='text-Cool-gray text-md'>{description}</p>
         </article>
       </div>
 
-      <p className='text-Cool-gray'>
-        ${`${priceType === "monthly" ? monthly + "/mo" : yearly + "/yr"}`}
+      <p className='text-Purplish-blue'>
+        +${`${priceType === "monthly" ? monthly + "/mo" : yearly + "/yr"}`}
       </p>
     </button>
   );
