@@ -67,7 +67,7 @@
   }
 
   .personal-info-form input {
-    @apply border-2 rounded-lg  w-full p-2 text-lg font-Ubuntu-medium;
+    @apply border-2 rounded-lg  w-full p-2 text-lg font-Ubuntu-medium text-Marine-blue;
   }
   /* .personal-info-form input:focus {
     outline: none;
