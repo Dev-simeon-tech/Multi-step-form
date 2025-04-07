@@ -67,11 +67,9 @@
   }
 
   .personal-info-form input {
-    @apply border-2 rounded-lg  w-full p-2 text-lg font-Ubuntu-medium text-Marine-blue;
+    @apply border-1 rounded-lg  w-full p-2 text-lg font-Ubuntu-medium text-Marine-blue;
   }
-  /* .personal-info-form input:focus {
-    outline: none;
-  } */
+
   .personal-info-form label {
     @apply text-Marine-blue;
   }

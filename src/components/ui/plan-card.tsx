@@ -38,7 +38,7 @@ const PlanCard = ({ plan, imageSrc }: PlanCardType) => {
           ${`${priceType === "monthly" ? monthly + "/mo" : yearly + "/yr"}`}
         </p>
         {priceType === "yearly" && (
-          <p className='text-Marine-blue'>2 months free</p>
+          <p className='text-Marine-blue text-sm'>2 months free</p>
         )}
       </article>
     </button>

@@ -44,7 +44,7 @@ const PersonalInfo = () => {
           <div className='flex justify-between'>
             <label htmlFor='name'>Name</label>
             {errors.name && (
-              <p className='text-Strawberry-red'>{`${errors.name.message}`}</p>
+              <p className='text-Strawberry-red font-Ubuntu-bold text-sm'>{`${errors.name.message}`}</p>
             )}
           </div>
           <input
@@ -67,7 +67,7 @@ const PersonalInfo = () => {
           <div className='flex justify-between'>
             <label htmlFor='email'>Email Address</label>
             {errors.email && (
-              <p className='text-Strawberry-red'>{`${errors.email.message}`}</p>
+              <p className='text-Strawberry-red font-Ubuntu-bold text-sm'>{`${errors.email.message}`}</p>
             )}
           </div>
           <input
@@ -90,7 +90,7 @@ const PersonalInfo = () => {
           <div className='flex justify-between'>
             <label htmlFor='phoneNumber'>Phone Number</label>
             {errors.phoneNumber && (
-              <p className='text-Strawberry-red'>{`${errors.phoneNumber.message}`}</p>
+              <p className='text-Strawberry-red font-Ubuntu-bold text-sm'>{`${errors.phoneNumber.message}`}</p>
             )}
           </div>
           <input
